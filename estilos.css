@@ -1,0 +1,181 @@
+@font-face{
+    font-family: 'roboto';
+    src: url('Font/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 30vh;
+    padding: 20px;
+    background-image: linear-gradient(rgba(187, 144, 158, 0.432), rgba(153, 179, 185, 0.411), rgba(131, 187, 150, 0.658)),url(Multimedia/Space\ Burguer.jpg);
+    background-size: cover;
+    background-position: center;
+    font-size: 20px;
+}
+
+header li{
+    margin: 7px;
+    margin-top: 10vh;
+}
+
+.barra{
+    float: right;
+    text-transform: capitalize;
+}
+
+.barra ul li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    padding-top: 150px;
+}
+
+.barra a{
+    color: white;
+    text-decoration: none;
+}
+
+.barra a:hover{
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Multimedia/Astronauta.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.call{
+    color: #fff;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid purple;
+    float: right;
+    margin: 30px;
+    padding: 20px;
+}
+
+h1{
+    color: purple;
+    margin-bottom: 20px;
+}
+
+.call p{
+    margin-bottom: 20px;
+}
+
+.call a{
+    background-color: purple;
+    text-decoration: none;
+    color: white;
+    padding: 13px;
+    border-radius: 10%;
+}
+
+.call a:hover{
+    background-color: palevioletred;
+}
+
+.slider-container img{
+    width: 100%;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p{
+    margin-bottom: 5px;
+}
+
+.subir{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align:center;
+    line-height: 40px;
+    font-size: 30px;
+    box-shadow: 2px 2px 7px #fff;
+    border-radius: 50%;
+}
+
+.what{
+    background-color: springgreen;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    font-size: 28px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #fff;
+}
+
+.carta1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.carta{
+    text-align: center;
+}
+
+.carta img{
+    box-shadow: 10px 5px 5px gray;
+    width: 45%;
+}
+
+.backcarta{
+    background-image: url(Multimedia/pexels-francesco-ungaro-998641.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+.ubi{
+    text-align: center;
+}
+
+iframe{
+    height: 650px;
+    width: auto;
+    padding: 50px 40px 50px 40px;
+}
+
+.preg{
+    text-align: center;
+}
