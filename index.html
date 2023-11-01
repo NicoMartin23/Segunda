@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <nav class="barra">
+        <nav class="barra d-none d-lg-block">
             <ul>
                 <li> <a href="index.html">Inicio</a></li>
                 <li> <a href="Pages/contacto.html">Contactanos</a></li>
@@ -23,12 +23,34 @@
                 <li> <a href="Pages/preguntas frecuentes.html">Preguntas Frequentes</a></li>
             </ul>
         </nav>
+        <nav class="d-block d-lg-none justify-content-end">
+            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header bg-dark">
+            <h2 class="offcanvas-title  text-light" id="offcanvasRightLabel">Menu</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-dark">
+            <div class="Menu">
+                <ul>
+                    <li> <a href="index.html">Inicio</a></li>
+                    <li> <a href="Pages/contacto.html">Contactanos</a></li>
+                    <li> <a href="Pages/carta.html">Carta</a></li>
+                    <li> <a href="Pages/Ubicacion.html">Ubicacion</a></li>
+                    <li> <a href="Pages/preguntas frecuentes.html">Preguntas Frequentes</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        </nav>
     </header>
-    <main>
-        <div class="call">
-            <h1>Nuestros Productos</h1>
-            <p>Nuestra hamburguesería de alta calidad se enorgullece de ofrecer una experiencia gastronómica excepcional. Cada hamburguesa se prepara con ingredientes frescos y de alta calidad</p>
-            <a href="Pages/carta.html">Ver mas</a>
+    <main class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="call col-12 col-md-4 col-sm-6 m-sm-4">
+                <h1>Nuestros Productos</h1>
+                <p>Nuestra hamburguesería de alta calidad se enorgullece de ofrecer una experiencia gastronómica excepcional. Cada hamburguesa se prepara con ingredientes frescos y de alta calidad</p>
+                <a href="Pages/carta.html">Ver mas</a>
+            </div>
         </div>
     </main>
     <footer>

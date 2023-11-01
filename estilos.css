@@ -19,7 +19,7 @@ html{
 
 header{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     width: auto;
     height: 30vh;
     padding: 20px;
@@ -35,7 +35,7 @@ header li{
 }
 
 .barra{
-    float: right;
+    float: center;
     text-transform: capitalize;
 }
 
@@ -43,7 +43,7 @@ header li{
     list-style: none;
     display: inline-block;
     color: white;
-    padding-top: 150px;
+    padding-top: 130px;
 }
 
 .barra a{
@@ -54,6 +54,22 @@ header li{
 .barra a:hover{
     color: black;
 }
+
+.Menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.Menu ul li{
+    color: white;
+    list-style: none;
+    margin: 20px;
+}
+
+.Menu a:hover{
+    color: #000;
+}
+
 
 body {
     display: flex;
@@ -71,11 +87,8 @@ main{
 
 .call{
     color: #fff;
-    width: 30%;
     background-color: rgba(0, 0, 0, 0.7);
     border: 3px solid purple;
-    float: right;
-    margin: 30px;
     padding: 20px;
 }
 
