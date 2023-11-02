@@ -71,10 +71,15 @@ header li{
 }
 
 
-body {
+body{
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    position: relative;
+    padding-bottom: 2em;
+    background-image: url(Multimedia/Nebula.jpg);
+    margin-bottom: 0px;
 }
 
 main{
@@ -93,8 +98,9 @@ main{
 }
 
 h1{
-    color: purple;
-    margin-bottom: 20px;
+    color:white;
+    padding: 15px 0 15px 0;
+    text-align: center;
 }
 
 .call p{
@@ -120,15 +126,22 @@ h1{
 footer{
     background-color: #000;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p{
     margin-bottom: 5px;
 }
 
+#redes {
+    font-size: 30px;
+    filter: invert(50%) sepia(100%) saturate(10000%) hue-rotate(290deg);
+}
 .subir{
     background-color: black;
     color: white;
@@ -159,9 +172,12 @@ footer p{
     box-shadow: 2px 2px 5px #fff;
 }
 
+/* Carta */
 .carta1{
+    color: #fff;
     text-align: center;
     padding-top: 20px;
+    height: 80px;
 }
 
 .carta{
@@ -169,16 +185,17 @@ footer p{
 }
 
 .carta img{
-    box-shadow: 10px 5px 5px gray;
+    box-shadow: 10px 5px 5px rgb(51, 51, 51);
     width: 45%;
 }
 
 .backcarta{
-    background-image: url(Multimedia/pexels-francesco-ungaro-998641.jpg);
+    background-image: url(Multimedia/Nebula.jpg);
     background-position: center;
-    background-size: auto;
+    background-size: contain;
 }
 
+/* Ubicacion */
 .ubi{
     text-align: center;
 }
@@ -189,6 +206,17 @@ iframe{
     padding: 50px 40px 50px 40px;
 }
 
+/* Preguntas Frequentes */
 .preg{
     text-align: center;
+    color: white
+}
+
+.tabla{
+    color: white;
+}
+
+/* Contacto */
+.cont{
+    color: white;
 }
