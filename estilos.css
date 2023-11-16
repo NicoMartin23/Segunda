@@ -78,16 +78,20 @@ body{
     flex-direction: column;
     position: relative;
     padding-bottom: 2em;
-    background-image: url(Multimedia/Nebula.jpg);
+    background-image: url(Multimedia/Astronauta.jpg);
     margin-bottom: 0px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 main{
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     background-image: url(Multimedia/Astronauta.jpg);
     background-position: center;
     background-size: cover;
+    padding-bottom: 15vh;
 }
 
 .call{
@@ -129,7 +133,7 @@ footer{
     font-size: 15px;
     text-align: center;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -172,6 +176,20 @@ footer p{
     box-shadow: 2px 2px 5px #fff;
 }
 
+.carro{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 40px;
+    bottom: 160px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+    box-shadow: 2px 2px 7px #5d9dfc;
+    border-radius:50%;
+}
+
 /* Carta */
 .carta1{
     color: #fff;
@@ -190,10 +208,31 @@ footer p{
 }
 
 .backcarta{
-    background-image: url(Multimedia/Nebula.jpg);
+    background-image: url(Multimedia/Astronauta.jpg);
     background-position: center;
-    background-size: contain;
-    
+    background-size: cover;
+    padding-bottom: 15vh;
+}
+
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;
+    justify-content: center;   
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .9;
+    transition: .5s ease;
+}
+
+section img:hover {
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 
 /* Ubicacion */
@@ -204,22 +243,48 @@ footer p{
 iframe{
     height: 650px;
     width: auto;
-    padding: 50px 40px 50px 40px;
-}
-
-/* Preguntas Frequentes */
-.preg{
-    text-align: center;
-    color: white
-}
-
-.tabla{
-    color: white;
+    padding: 50px 40px;
+    margin-bottom: 10vh;
+    border-radius: 70px;
 }
 
 /* Contacto */
-.cont{
+#contacto {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
     color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label,
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #84328b;
+    color: #fff;
+    border: 50%;
+    cursor: pointer;
+    border-radius: 7%;
+}
+
+.informacion-contacto,
+.redes-sociales {
+    margin-bottom: 20px;
 }
 
 .contenedor{
@@ -238,12 +303,11 @@ iframe{
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap:30px;
     grid-row-gap: 30px;
-    /* width: 60%; */
-    width: 100%;
+    width: 60%;
     transition: .3s;
 }
 .contenedor .contenedor-items .item{
-    max-width: 200px;
+    max-width: 230px;
     margin: auto;
     border: 1px solid #666;
     border-radius: 10px;
@@ -274,7 +338,7 @@ iframe{
     display: block;
     margin: 10px auto;
     border: none;
-    background-color: black;
+    background-color: darkcyan;
     color: #fff;
     padding: 5px 15px;
     border-radius: 5px;
@@ -291,6 +355,7 @@ iframe{
     position: sticky !important;
     top: 0;
     transition: .3s;
+    background-color: white;
     /* Estilos para ocultar */
     margin-right: -100%;
     opacity: 0;
@@ -299,12 +364,12 @@ iframe{
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 .carrito .carrito-item{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+/*     justify-content: space-between;  */
     position: relative;
     border-bottom: 1px solid #666;
     padding: 20px;
@@ -362,7 +427,7 @@ iframe{
     cursor: pointer;
     display: block;
     background: transparent;
-    z-index: 20;
+    z-index:20;
 }
 .carrito .carrito-item .btn-eliminar i{
     pointer-events: none;
@@ -399,6 +464,10 @@ iframe{
     scale: 1.05;
 }
 
+.item{
+    color: white
+}
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width: 850px) {
     .contenedor {
@@ -411,3 +480,4 @@ iframe{
         width: 100%;
     }
 }
+
